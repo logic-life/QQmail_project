@@ -1,12 +1,16 @@
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
-        .when('/showName', {
-            templateUrl: 'view/showName.html',
-            controller: 'showNameController'
+        .when('/draftBox', {
+            templateUrl: 'view/draftBox.html',
+            controller: 'draftBoxCtrl'
         })
-        .when('/showInfo', {
-            templateUrl: 'view/showInfo.html',
-            controller: 'showInfoController'
+        .when('/inBox', {
+            templateUrl: 'view/inBox.html',
+            controller: 'inBoxCtrl'
+        })
+        .when('/outBox', {
+            templateUrl: 'view/outBox.html',
+            controller: 'outBoxCtrl'
         })
         .otherwise({
             redirectTo: '/showName'
